@@ -1,0 +1,8 @@
+# Direct versions tested on Linux x86-64 / Python 3.12 CPU.
+# Use the official PyTorch CPU index as documented in docs/PORTABLE_INFERENCE.md.
+-r inference-mfcc.txt
+torch==2.15.0+cpu
+torchaudio==2.11.1+cpu
+speechbrain==1.1.2
+huggingface-hub==2.4.0
+hyperpyyaml==1.2.3

@@ -1,0 +1,74 @@
+{
+  "experiment_id": "FINAL-OPEN-SET-A",
+  "status": "FROZEN_VALIDATION_ONLY",
+  "protocol": {
+    "class_order": [
+      "V01",
+      "V02",
+      "V03",
+      "V04"
+    ],
+    "acceptance_inequality": "top_score >= threshold"
+  },
+  "configuration": {
+    "mfcc_config_sha256": "7021a130dd10636428126ba3b01887ccfaf192888a3db02700d68f49dc27306c",
+    "segmentation": {
+      "sample_rate_hz": 16000,
+      "segment_seconds": 3.0,
+      "hop_seconds": 1.5,
+      "minimum_padded_tail_seconds": 1.5
+    },
+    "mfcc": {
+      "frame_ms": 25.0,
+      "hop_ms": 10.0,
+      "n_fft": 400,
+      "hop_length": 160,
+      "center": false,
+      "mel_filters": 40,
+      "coefficients": 20,
+      "delta_orders": [
+        1,
+        2
+      ],
+      "temporal_aggregation": [
+        "mean",
+        "std"
+      ],
+      "dimension": 120
+    },
+    "ecapa": {
+      "source": "speechbrain/spkrec-ecapa-voxceleb",
+      "pretrained": true,
+      "frozen": true,
+      "fine_tuned": false,
+      "dimension": 192
+    },
+    "classifier": {
+      "pipeline": [
+        "StandardScaler",
+        "SVC"
+      ],
+      "kernel": "rbf",
+      "C": 1.0,
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "decision_function_shape": "ovr",
+      "probability": false
+    }
+  },
+  "representations": {
+    "mfcc": {
+      "model_sha256": "417beadded3b37f8ddc7f95771011422440e1d373ac65905a1b6f0f52f1d3e95",
+      "calibration": {
+        "threshold": 3.1804021896256245
+      }
+    },
+    "ecapa": {
+      "model_sha256": "15c6d934b4bfc0919c295b8ab729d7c4638ed0da63b8054474632ce2643503e4",
+      "calibration": {
+        "threshold": 3.1886667008008707
+      }
+    }
+  },
+  "artifacts_root": "artifacts/final_open_set_a"
+}

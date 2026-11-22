@@ -1,0 +1,10 @@
+# Direct dependencies of the locally validated Python 3.12 runtime.
+# Install the application separately with: pip install --no-deps -e .
+numpy==2.5.3
+scipy==1.18.1
+soundfile==0.14.0
+librosa==0.11.0
+scikit-learn==1.9.1
+joblib==1.6.0
+# Only microphone/device enumeration uses SoundDevice/PortAudio.
+sounddevice==0.5.6

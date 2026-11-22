@@ -1,0 +1,10 @@
+sample_rate_hz: 16000
+segment_duration_seconds: 3.0
+segment_hop_seconds: 1.5
+minimum_final_segment_seconds: 1.5
+frame_length_ms: 25.0
+frame_hop_ms: 10.0
+n_mels: 40
+n_mfcc: 20
+delta_orders: [1, 2]
+temporal_aggregation: mean_std

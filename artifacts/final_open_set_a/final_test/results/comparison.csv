@@ -1,0 +1,12 @@
+metric,MFCC,ECAPA
+feature_dimension,120,192
+validation_threshold,3.1804021896256245,3.1886667008008707
+calibration_far,0.0,0.0
+calibration_frr,0.35,0.15
+final_known_accuracy,0.65,0.95
+final_unknown_rejection,0.9333333333333333,1.0
+final_far,0.06666666666666667,0.0
+final_frr,0.35,0.05
+known_to_known_error_rate,0.0,0.0
+overall_accuracy,0.7714285714285715,0.9714285714285714
+macro_f1,0.6933333333333334,0.9713261648745519

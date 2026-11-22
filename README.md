@@ -1,6 +1,6 @@
 # Identificação de Locutores — MFCC vs ECAPA-TDNN
 
-Projeto acadêmico de processamento de voz que identifica um dos locutores
+Versão pública do projeto acadêmico de processamento de voz que identifica um dos locutores
 cadastrados (V01–V04) ou rejeita uma gravação como `UNKNOWN`. A comparação usa
 uma representação acústica clássica e uma representação neural pré-treinada.
 
